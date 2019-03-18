@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NarutoApp</string>
+    <string name="password_hint">**************</string>
+    <string name="forgot_your_login_info">Esqueceu Login/Senha?</string>
+    <string name="sign_in">Entrar</string>
+    <string name="remember_my_password">Lembrar Senha</string>
+    <string name="username">Usuário</string>
+</resources>
