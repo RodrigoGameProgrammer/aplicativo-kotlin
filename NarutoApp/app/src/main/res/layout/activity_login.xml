@@ -24,7 +24,7 @@
 
 
         <EditText
-                android:id="@+id/et_email"
+                android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/login_edit_text_bg"
@@ -39,6 +39,7 @@
 
 
         <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
@@ -59,7 +60,7 @@
                 android:layout_gravity="center"
                 android:text="@string/remember_my_password"
                 android:textColor="@color/colorTextBlack"
-                android:theme="@color/colorAccent"
+                android:theme="@color/colorBotao"
                 android:textSize="6pt"
                 android:layout_marginTop="10dp"
         />
