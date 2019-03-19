@@ -22,7 +22,6 @@
                 android:adjustViewBounds="false"
         />
 
-
         <EditText
                 android:id="@+id/user"
                 android:layout_width="match_parent"
