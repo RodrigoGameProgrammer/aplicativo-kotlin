@@ -1,23 +1,24 @@
 package com.example.narutoapp
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.support.annotation.RequiresApi
-import android.os.Build
+import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Toast
+
+import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_login.*
-import android.content.Intent
 
-
-
-class LoginActivity : AppCompatActivity() {
+class Cadastro : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_cadastro)
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.setStatusBarColorTo(R.color.colorPrimaryDark)
@@ -27,25 +28,18 @@ class LoginActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        btn_login.setOnClickListener {
-            if(user.text.toString() == "admin" && password.text.toString() == "123") {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            }else{
-                Toast.makeText(this, "Usuário ou Senha inválido", Toast.LENGTH_LONG).show()
-            }
-        }
-
-        btn_cadastrar.setOnClickListener {
-            val intent = Intent(this, Cadastro::class.java)
+        btn_criar_conta.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-
-        tv_forgot_password.setOnClickListener {
-            val intent = Intent(this, Recuperar::class.java)
-            startActivity(intent)
+        btn_limpar.setOnClickListener {
+            name_user.setText("")
+            email.setText("")
+            senha.setText("")
+            confirma_senha.setText("")
         }
+
     }
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)

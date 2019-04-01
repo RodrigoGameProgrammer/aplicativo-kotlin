@@ -1,8 +1,20 @@
 <resources>
+
+    <!--Tela Login-->
     <string name="app_name">NarutoApp</string>
+    <string name="username">Usuário</string>
     <string name="password_hint">Senha</string>
     <string name="forgot_your_login_info">Esqueceu Login/Senha?</string>
     <string name="sign_in">Entrar</string>
     <string name="remember_my_password">Lembrar Senha</string>
-    <string name="username">Usuário</string>
+
+    <!--Cadastro-->
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="name_user">Nome Usuário</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="confirma_senha">Confirmar Senha</string>
+    <string name="register">Criar Conta</string>
+    <string name="limpar">Limpar Textos</string>
+    <string name="criar">CRIAR CONTA NARUTO APP</string>
 </resources>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/login_bg">
+            android:background="@drawable/login_bg" android:layout_height="match_parent">
 
     <LinearLayout
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:context="br.com.fake.steam.LoginActivity">
 
@@ -20,10 +20,12 @@
                 android:src="@mipmap/logo3"
                 android:cropToPadding="false"
                 android:adjustViewBounds="false"
+                android:contentDescription="@null"
         />
 
         <EditText
                 android:id="@+id/user"
+                android:autofillHints="username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/login_edit_text_bg"
@@ -39,6 +41,7 @@
 
         <EditText
                 android:id="@+id/password"
+                android:autofillHints="password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:inputType="textPassword"
@@ -70,6 +73,18 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/login_button_bg"
                 android:text="@string/sign_in"
+                android:textColor="@color/colorTextBlack"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+        />
+
+        <Button
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button_bg"
+                android:text="@string/register"
                 android:textColor="@color/colorTextBlack"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="70dp"
